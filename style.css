@@ -23,12 +23,9 @@ body{
   flex-direction: column;
   justify-content:space-around;
   right: 45%;
-  background-color: rgba(240, 248, 255, 0.548);
-  height: 100%;
-  width: 10%;
-  top: 0;
-  padding-top: 0;
-  margin-top: 0 ;
+  /*background-color: rgba(240, 248, 255, 0.548);*/
+  width: 150px;
+  height: 150px;
 
 }
 
@@ -37,23 +34,27 @@ body{
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 100px;
-    top: 30px;
+    left: 10%;
+    padding: 1%;
     font-size: 40px;
     /*background-color: rgb(143, 143, 143);*/
     color: white;
-    padding: 0;
+    width: 350px;
 }
 
 .experiencia{
     display: flex;
     flex-direction: column;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 15px;
+    top: 10%;
+    /*background-color: rgba(240, 248, 255, 0.418);*/
 }
 
 /*lista  esquerda do head*/
 .listaHeader{
+    display: flex;
+    flex-direction: column;
     color: white;
     position: absolute;
     top: 130px;

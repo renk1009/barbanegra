@@ -1,0 +1,111 @@
+body{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(https://img.itdg.com.br/tdg/images/blog/uploads/2017/07/shutterstock_259773713.jpg?w=1200);
+
+
+}
+
+/*div onde contém o cabeçalho*/
+.siteHeader{
+    height: 158px;
+    background-color: rgb(5, 5, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*imagem do logo*/
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  right: 850px;
+  /*background-color: rgba(240, 248, 255, 0.548);*/
+  height: 150px;
+  width: 150px;
+  top: 5px;
+
+}
+
+/*Nome e slogan no head*/
+.bnBurguer{
+    position: absolute;
+    left: 100px;
+    top: 30px;
+    font-size: 40px;
+    /*background-color: rgb(143, 143, 143);*/
+    color: white;
+    padding: 0;
+}
+
+.experiencia{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+/*lista  esquerda do head*/
+.listaHeader{
+    color: white;
+    position: absolute;
+    top: 130px;
+    left: 100px;
+    
+    
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: brown;*/
+  }
+
+  li {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: 80px;
+    
+  }
+
+  /*contatos header lado direito*/
+  .telefoneHeader{
+    position: absolute;
+    right: 200px;
+    top: 129px;
+    width: 120px;
+    /*background-color: rgba(125, 125, 126, 0.288);*/
+  }
+
+  .iconesHeader{
+    position: absolute;
+    right: 50px;
+    top: 129px;
+    width: 120px;
+    /*background-color: rgba(125, 125, 126, 0.288);*/
+    
+  }
+
+
+  /*parte central para fazer pedido*/
+
+  .bgLayer{
+    background-color: rgba(51, 51, 51, 0.616);
+    height: 600px;
+    width: 1880px;
+  }
+
+.bemVindo{
+  position: absolute;
+  background-color: rgba(22, 22, 22, 0.651);
+  width: 700px;
+  height: 450px;
+  right: 290px;
+  top: 230px;
+}

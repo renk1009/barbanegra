@@ -1,18 +1,19 @@
 body{
   display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content:center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-image: url(https://img.itdg.com.br/tdg/images/blog/uploads/2017/07/shutterstock_259773713.jpg?w=1200);
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  background-color: aliceblue;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url(https://img.itdg.com.br/tdg/images/blog/uploads/2017/07/shutterstock_259773713.jpg?w=1200);
 }
 
 /*div onde contém o cabeçalho*/
 .siteHeader{
     display: flex;
-    flex-direction: column;
-    height: 150px;
+    height: 158px;
+    width: 100vw;
     background-color: rgb(5, 5, 5);
     align-items: center;
 }
@@ -20,12 +21,11 @@ body{
 /*imagem do logo*/
 .logo{
   display: flex;
-  flex-direction: column;
-  justify-content:space-around;
-  right: 45%;
+  flex: 1;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: center;
   /*background-color: rgba(240, 248, 255, 0.548);*/
-  width: 150px;
-  height: 150px;
 
 }
 
@@ -33,23 +33,16 @@ body{
 .bnBurguer{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     position: absolute;
-    left: 10%;
-    padding: 1%;
+    left: 100px;
     font-size: 40px;
-    /*background-color: rgb(143, 143, 143);*/
+    background-color: rgb(143, 143, 143);
     color: white;
-    ggg
-    width: 350px;
 }
 
 .experiencia{
-    display: flex;
-    flex-direction: column;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    top: 10%;
-    /*background-color: rgba(240, 248, 255, 0.418);*/
+  margin-top: 10px;
 }
 
 /*lista  esquerda do head*/

@@ -1,117 +1,90 @@
 body{
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-  height: 100vh;
-  background-color: aliceblue;
-  background-size: 100%;
-  background-repeat: no-repeat;
+  
   background-image: url(https://img.itdg.com.br/tdg/images/blog/uploads/2017/07/shutterstock_259773713.jpg?w=1200);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/*div onde contém o cabeçalho*/
-.siteHeader{
-    display: flex;
-    height: 158px;
-    width: 100vw;
-    background-color: rgb(5, 5, 5);
-    align-items: center;
+.menu{
+  background-color: rgb(0, 0, 0);
 }
 
-/*imagem do logo*/
-.logo{
+
+.header-container{
   display: flex;
-  flex: 1;
-  flex-direction:row;
   flex-wrap: wrap;
-  justify-content: center;
-  /*background-color: rgba(240, 248, 255, 0.548);*/
-
+  justify-content: space-between;
+  height: 260px;
 }
 
-/*Nome e slogan no head*/
-.bnBurguer{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    position: absolute;
-    left: 100px;
-    font-size: 40px;
-    background-color: rgb(143, 143, 143);
-    color: white;
+.bn-burguer{
+  font-size: 45px;
+  background-color: rgba(240, 248, 255, 0.5);
+  height: 100px;
 }
 
 .experiencia{
-  margin-top: 10px;
+  font-size: 20px;
 }
 
-/*lista  esquerda do head*/
-.listaHeader{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    position: absolute;
-    top: 130px;
-    left: 100px;
-    
-    
+.logo{
+  justify-content: center;
+  background-color: rgba(240, 248, 255, 0.39);
 
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    /*background-color: brown;*/
-  }
-
-  li {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    width: 80px;
-    
-  }
-
-  /*contatos header lado direito*/
-  .telefoneHeader{
-    position: absolute;
-    right: 200px;
-    top: 129px;
-    width: 120px;
-    /*background-color: rgba(125, 125, 126, 0.288);*/
-  }
-
-  .iconesHeader{
-    position: absolute;
-    right: 50px;
-    top: 129px;
-    width: 120px;
-    /*background-color: rgba(125, 125, 126, 0.288);*/
-    
-  }
-
-
-  /*parte central para fazer pedido*/
-
-  .bgLayer{
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(51, 51, 51, 0.616);
-    height: 600px;
-    
-  }
-
-.bemVindo{
+.header-lista{
   display: flex;
-  flex-direction: column;
-  position: absolute;
-  background-color: rgba(22, 22, 22, 0.651);
-  width: 700px;
-  height: 450px;
-  right: 10%;
-  top: 230px;
+  flex-direction: row;
+  padding-inline-end: 150px;
+  padding-inline-start: 150px;
+  background-color: rgb(31, 31, 31);
+  width: 100%;
+  height: 35px;
+  justify-content: space-between;
+
 }
+
+.lista{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.lista li{
+  display: inline;
+  list-style: none;
+  margin-right: 10px;
+  flex: 1;
+  flex-wrap: wrap;
+  /*background-color: rgba(250, 253, 255, 0.295);*/
+
+}
+
+.icones-header {
+  /*position: absolute;
+  right: 100px;
+  width: 255px;
+  /*background-color: rgba(240, 248, 255, 0.315);*/
+
+}
+
+.icones-header i{
+  margin: 10px;
+}
+
+
+.container{
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  
+}
+
+
+/*@media screen and (max-width: 230px) {
+  body{
+    display: flex;
+    flex-direction: row;
+  }
+  
+}*/

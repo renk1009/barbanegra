@@ -1,6 +1,9 @@
 * {
   margin: 0;
-  padding: 0; 
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
 }
 
 a {
@@ -27,6 +30,7 @@ nav {
   height: 8vh;
 
 }
+
 
 main {
   background: url(https://img.itdg.com.br/tdg/images/blog/uploads/2017/07/shutterstock_259773713.jpg?w=1200) no-repeat center center;
@@ -58,13 +62,13 @@ main {
   display: none;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 999px) {
   body {
-    overflow: hidden;
+    overflow-x: scroll;
   }
 
   .nav-list {
-    position: absolute;
+    position: fixed;
     top: 8vh;
     right: 0;
     width: 25vw;
@@ -73,7 +77,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    transform: translate(100%);
+    transform: translateX(100%);
     transition: 0.3s ease-in;
   }
 
@@ -87,7 +91,7 @@ main {
   }
 
   .nav-list.active {
-    transform: translate(0);
+    transform: translateX(0);
   }
 }
 
@@ -116,3 +120,6 @@ main {
   transform: rotate(45deg) translate(-5px, -7px);
   
 }
+
+
+

@@ -28,10 +28,6 @@ nav {
 
 }
 
-ul {
-
-}
-
 main {
   background: url(https://img.itdg.com.br/tdg/images/blog/uploads/2017/07/shutterstock_259773713.jpg?w=1200) no-repeat center center;
   background-size: cover;
@@ -62,7 +58,7 @@ main {
   display: none;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 750px) {
   body {
     overflow: hidden;
   }

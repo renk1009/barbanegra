@@ -1,19 +1,15 @@
 * {
   margin: 0;
   padding: 0;
-  outline: none;
-  border: none;
   box-sizing: border-box;
 }
 
 a {
-  color: aliceblue;
+  color: white;
   text-decoration:none;
 }
 
-a:hover {
-  opacity: 0.7;
-}
+
 
 .logo {
   font-size: 24px;
@@ -39,22 +35,31 @@ main {
 
 }
 
-.nav-list {
+.nav-menu {
   list-style: none;
   display: flex;
 }
 
-.nav-list li {
+.nav-item {
   letter-spacing: 2px;
   margin-left: 20px;
 }
 
+.nav-link{
+  transition: 0.7s ease;
+}
+
+.nav-link:hover{
+  color: white;
+}
+
 .menu-hamburguer div {
+  display:block;
   width: 32px;
   height: 2px;
   background-color: white;
   margin: 8px;
-  transition: 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-hamburguer {
@@ -67,58 +72,55 @@ main {
     overflow-x: scroll;
   }
 
-  .nav-list {
-    position: fixed;
-    top: 8vh;
-    right: 0;
-    width: 25vw;
-    height: 35vh;
-    background: black;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transform: translateX(100%);
-    transition: 0.3s ease-in;
-  }
-
-  .nav-list li {
-    margin-left: 0;
-    opacity: 0;
-  }
-
   .menu-hamburguer {
     display: block;
   }
 
-  .nav-list.active {
-    transform: translateX(0);
+  .menu-hamburguer.active .bar1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  
   }
-}
-
-@keyframes navLinkFade {
-  from{
+  
+  .menu-hamburguer.active .bar2 {
+    
     opacity: 0;
-    transform: translate(50px);
   }
-  to {
-    opacity: 1;
-    transform: translate(0);
+  
+  .menu-hamburguer.active .bar3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+    
   }
-}
 
-.menu-hamburguer.active .line1 {
-  transform: rotate(-45deg) translate(-8px, 8px);
+  .nav-menu {
+    position: absolute;
+    top: 8vh;
+    right: -26%;
+    width: 25vw;
+    height: 10vh;
+    background: rgb(0, 0, 0);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.5s ease-in;
+  }
 
-}
+  .nav-item {
+    margin-left: 0;
+  }
 
-.menu-hamburguer.active .line2 {
-  
-  opacity: 0;
-}
+  .nav-link {
+    color: white;
+    right: -26%;
+    transition: 1s ease;
+  }
 
-.menu-hamburguer.active .line3 {
-  transform: rotate(45deg) translate(-5px, -7px);
-  
+  .nav-link.active {
+    right: 0;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
 }
 
 

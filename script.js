@@ -1,45 +1,15 @@
-class MobileNavbar {
-    constructor(mobileMenu, navList, navLinks) {
-        this.mobileMenu = document.querySelector(mobileMenu);
-        this.navList = document.querySelector(navList);
-        this.navLinks = document.querySelectorAll(navLinks);
-        this.activeClass = "active";
+const hamburguer = document.querySelector(".menu-hamburguer");
+const navMenu = document.querySelector(".nav-menu");
+const navItem = document.querySelector(".nav-item")
 
-        this.handleClick = this.handleClick.bind(this);
-    }
+hamburguer.addEventListener("click", () => {
+   hamburguer.classList.toggle("active");
+   navMenu.classList.toggle("active");
+   navItem.classList.toggle("active"); 
+})
 
-    animateLinks() {
-        this.navLinks.forEach((link) => {
-            link.style.animations
-                ? (link.style.animation = "")
-                : (link.style.animation = 'navLinkFade 0.5s ease forwards 0.3s');
-
-        });
-    }
-
-    handleClick() {
-        this.navList.classList.toggle(this.activeClass);
-        this.mobileMenu.classList.toggle(this.activeClass);
-        this.animateLinks();
-    }
-
-    addClickEvent() {
-        this.mobileMenu.addEventListener("click", this.handleClick);
-    }
-
-    init() {
-        if (this.mobileMenu) {
-            this.addClickEvent();
-        }
-        return this;
-    }
-}
-
-const mobileNavbar = new MobileNavbar(
-    ".menu-hamburguer",
-    ".nav-list",
-    ".nav-list li",
-
-);
-
-mobileNavbar.init();
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("clock", () => {
+    hamburguer.classList.remove("active");
+    navMenu.classList.remove("active");
+    navItem.classList.toggle("active");
+}))

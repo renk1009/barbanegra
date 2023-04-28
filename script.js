@@ -13,3 +13,7 @@ hamburguer.addEventListener("click", () => {
     hamburguer.classList.remove("active");
     navMenu.classList.remove("active");
 }))
+
+window.addEventListener("load", function() {
+    this.document.querySelector(".logo-header").classList.add("loaded");
+})

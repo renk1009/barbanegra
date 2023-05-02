@@ -17,4 +17,5 @@ hamburguer.addEventListener("click", () => {
 window.addEventListener("load", function() {
     this.document.querySelector(".logo-header").classList.add("loaded");
     this.document.querySelector(".bnburguer").classList.add("loaded");
+    this.document.querySelector(".top-pedido").classList.add("loaded");
 })

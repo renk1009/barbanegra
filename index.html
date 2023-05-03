@@ -3,8 +3,6 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--<script src="https://kit.fontawesome.com/06fc029924.js" crossorigin="anonymous"></script>-->
-  
   <link rel="stylesheet" href="estilo.css">
   <title>Barba Negra Burguer</title>
 </head>
@@ -12,17 +10,23 @@
 <body>
   <header>
     <div class="header-geral">
+      <!--logo e nome-->
       <div class="top-logo">
-      <img src="/imagens/logomedio.png" alt="logo" class="logo-header">
-      <a href="#" class="bnburguer">BN Burguer</a>
+        <img src="/imagens/logomedio.png" alt="logo" class="logo-header">
+        <a href="#" class="bnburguer">BN Burguer</a>
       </div>
+      <!--fim logo e nome-->
+
+      <!--slogam e botão pepdido-->
       <div class="top-pedido">
-      <img src="/imagens/7maresmedio.png" alt="slogan" class="slogan-header">
-      <button type="button" class="botao-pedido">Peça Online</button>
+        <img src="/imagens/7maresmedio.png" alt="slogan" class="slogan-header">
+        <button type="button" class="botao-pedido">Peça Online</button>
       </div>
+      <!--fim slogam e botão pedido-->
     </div>
   </header>
   <nav>
+    <!--Barra de navegação-->
     <ul class="nav-menu">
       <li class="nav-item">
         <a href="#">Início</a>
@@ -37,15 +41,51 @@
         <a href="#">Benefícios</a>
       </li>
     </ul>
+    <!--fim barra de navegação-->
+
+    <!--botão menu-->
     <div class="menu-hamburguer">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
     </div>
+    <!--fim botão menu-->
   </nav>
   <main class="container">
-    <div class="galeria">
+    <div class="slider">
+      <div class="slides">
+        <!--Radio Buttons-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <!--fim Radio Buttons-->
 
+        <!--Slide images-->
+        <div class="slide first">
+          <img src="/imagens/bannerbemvindo.png" alt="imagem 1">
+        </div>
+        <div class="slide">
+          <img src="/imagens/bannerbemvindotesteslide2.png" alt="imagem 2">
+        </div>
+        <div class="slide">
+          <img src="/imagens/bannerbemvindotesteslide3.png" alt="imagem 3s">
+        </div>
+        <!--Fim Slide images-->
+
+        <!--Navigation auto-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+        </div>
+        <!--Fim Navigation auto-->
+      </div>
+
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+      </div>
     </div>
 
   </main>

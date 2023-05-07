@@ -110,7 +110,7 @@ nav {
 
 
 main {
-  background: url(/imagens/burguerback/buguerbackground.jpg) no-repeat center center;
+  background: url(./imagens/burguerback/buguerbackground.jpg) no-repeat center center;
   background-size: cover;
   height: 92vh;
 
@@ -161,6 +161,10 @@ a {
   width: 400%;
   height: 343px;
   display: flex;
+}
+
+.slide img {
+  width: 1011px;
 }
 
 .slides input {
@@ -240,7 +244,9 @@ a {
 }
 
 
-@media (max-width: 980px) {
+
+
+@media (max-width: 999px) {
   body {
     overflow: hidden;
   }
@@ -303,6 +309,7 @@ a {
     position: absolute;
     right: 25px;
     width: 50px;
+    z-index: 2;
   }
 
   .menu-hamburguer.active .bar1 {
@@ -332,13 +339,14 @@ a {
     margin-top: 0;
     right: -100%;
     width: 50vw;
-    height: auto;
+    height: c;
     top: 337px;
     background: rgb(0, 0, 0);
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: 0.5s ease-in;
+    z-index: 1;
   }
 
   .nav-item {
@@ -350,4 +358,87 @@ a {
     right: 0;
     top: 400px;
   }
+
+
+  main {
+    overflow: hidden;
+  }
+
+
+  .slider {
+    display: flex;
+   margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 720vw;
+    height: 343px;
+    overflow: hidden;
+  }
+  
+  .slides {
+    width: 56%;
+    height: 343vh;
+    display: flex;
+  }
+  
+  .slide img {
+    width: 100vw;
+  }
+  
+  .slides input {
+    display: none;
+  }
+
+  .navigation-manual {
+    position: absolute;
+    width: 725px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+  
+  }
+
+  
+#radio1:checked ~ .first {
+  margin: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+
+.navigation-auto div {
+  border: 2px solid rgb(15, 30, 235);
+  padding: 3px;
+  border-radius: 10px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin-left: 10px;
+  transition: 1s;
+}
+
+.navigation-auto {
+  position: absolute;
+  width: 720px;
+  margin-top: 323px;
+  display: flex;
+  justify-content: center;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: rgb(255, 255, 255);
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: rgb(255, 255, 255);
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: rgb(255, 255, 255);
+}
+
 }

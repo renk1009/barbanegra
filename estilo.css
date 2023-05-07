@@ -255,7 +255,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 35vh;
+    height: 40vh;
     overflow: hidden;
   }
 
@@ -338,9 +338,9 @@ a {
     padding: 0;
     margin-top: 0;
     right: -100%;
-    width: 50vw;
+    width: 100vw;
     height: c;
-    top: 337px;
+    top: 400px;
     background: rgb(0, 0, 0);
     flex-direction: column;
     align-items: center;
@@ -390,55 +390,13 @@ a {
   }
 
   .navigation-manual {
-    position: absolute;
-    width: 725px;
-    margin-top: 200px;
-    display: flex;
-    justify-content: center;
+    display: none;
   
   }
 
-  
-#radio1:checked ~ .first {
-  margin: 0;
-}
-
-#radio2:checked ~ .first {
-  margin-left: -25%;
-}
-
-#radio3:checked ~ .first {
-  margin-left: -50%;
-}
-
-.navigation-auto div {
-  border: 2px solid rgb(15, 30, 235);
-  padding: 3px;
-  border-radius: 10px;
-  cursor: pointer;
-  letter-spacing: 2px;
-  margin-left: 10px;
-  transition: 1s;
-}
-
 .navigation-auto {
-  position: absolute;
-  width: 720px;
-  margin-top: 323px;
-  display: flex;
-  justify-content: center;
+  display: none;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1 {
-  background-color: rgb(255, 255, 255);
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2 {
-  background-color: rgb(255, 255, 255);
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3 {
-  background-color: rgb(255, 255, 255);
-}
 
 }

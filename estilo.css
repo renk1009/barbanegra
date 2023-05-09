@@ -255,7 +255,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 60vh;
+    height: 40vh;
     overflow: hidden;
   }
 
